@@ -3,13 +3,13 @@
 1. Create a test file called `test_string_mummifier.py` (You will use this file to write tests for your solution)
    1. In this file import TestCase from unittest
    
-   ```
+   ```python
    from unittest import TestCase
    ```
    
    2. Create a python class `TestStringMummifier` that inherits from TestCase
    
-   ```
+   ```python
    from unittest import TestCase
    
    class StringMummifierTestCase(TestCase):
@@ -19,7 +19,7 @@
    3. Create a method prefixed with `test_` (this because the unittest framework picks up only test methods beginning with `test_`
 Your test method should have a meaningful name describing the scenario you are testing and its expected behaviour if possible. For e.g. `test_should_not_mummify_empty_string`
 
-   ```
+   ```python
    from unittest import TestCase
    
    class StringMummifierTestCase(TestCase):
@@ -34,21 +34,19 @@ Your test method should have a meaningful name describing the scenario you are t
 
    - Tip: Utilise the self.assertEqual() to validate the method’s outputs against what you expect
 
-    ```
+    ```python
     from unittest import TestCase
     
     from string_mummifier import StringMummifier
     
-    
     class StringMummifierTestCase(TestCase):
-       def test_should_not_mummify_empty_string(self):
-           word = "";
+        def test_should_not_mummify_empty_string(self):
+            word = ""
     
-           mummifier = StringMummifier();
-           mummified_word = mummifier.mommify(word);
+            mummifier = StringMummifier()
+            mummified_word = mummifier.mommify(word)
     
-           self.assertEqual("", mummified_word);
-    
+            self.assertEqual("", mummified_word)
     ```
 
 2. Create a file called string_mummifier.py
@@ -56,7 +54,7 @@ You will use this file to write the code for your solution
 
    1. Create a python class StringMummifier and a method in the class called mummify that takes in a word
     
-    ```
+    ```python
     class StringMummifier:
         def mummify(self, word):
             return None
@@ -72,9 +70,8 @@ You will use this file to write the code for your solution
 
    ```python
    class StringMummifier:
-   
-      def mummify(self, word):
-          return ""
+       def mummify(self, word):
+           return ""
 
    ```
 
