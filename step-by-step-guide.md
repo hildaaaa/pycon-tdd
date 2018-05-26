@@ -1,13 +1,8 @@
 
 #### Steps for python beginners:
 1. Create a test file called `test_string_mummifier.py` (You will use this file to write tests for your solution)
-   1. In this file import TestCase from unittest
-   
-   ```python
-   from unittest import TestCase
-   ```
-   
-   2. Create a python class `TestStringMummifier` that inherits from TestCase
+
+   1. Create a python class `TestStringMummifier` that inherits from TestCase and import the necessary library
    
    ```python
    from unittest import TestCase
@@ -16,7 +11,7 @@
        pass
    ```
    
-   3. Create a method prefixed with `test_` (this because the unittest framework picks up only test methods beginning with `test_`
+   2. Create a method prefixed with `test_` (this because the unittest framework picks up only test methods beginning with `test_`
 Your test method should have a meaningful name describing the scenario you are testing and its expected behaviour if possible. For e.g. `test_should_not_mummify_empty_string`
 
    ```python
@@ -27,12 +22,23 @@ Your test method should have a meaningful name describing the scenario you are t
            pass
    ```
 
-   4. In the test method, you may structure the test in the below format:
-      - Arrange (Initialize any variables you require)
-      - Act (Invoke the method you are testing)
-      - Assert (Check that your expectations are met)
+   3. In the test method, we usually structure tests in the following manner:
+      1. Initialize any variables you require (Arrange)
+      2. Invoke the method you are testing (Act)
+      3. Check that your expectations are met (Assert)
+         
+         - Tip: Utilise the unittest's `self.assertEqual` to validate the method’s outputs against what you expect
+   
+   - “Arrange, Act, Assert” (aka “AAA”) is a very simple way to structure your tests. It is especially helpful when learning the ropes.
+   
+   - Since this is the very first test we create and the actual method has not been created yet, you may not know the:
+      1. class to call
+      2. method to call
+      3. method signature
 
-   - Tip: Utilise the self.assertEqual() to validate the method’s outputs against what you expect
+      Writing tests first would allow you to think about how you wish to design and use the actual method. 
+
+      In our case, let's say we wish to put the method in a new class called `StringMummifier`. And we would like to call the method `mummify`, since that describes what it does. The method could take in a word and output the mummified word.
 
     ```python
     from unittest import TestCase
