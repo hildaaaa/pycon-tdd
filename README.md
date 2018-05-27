@@ -60,5 +60,11 @@ The challenge for you today is to complete the above problem with a TDD (Red-Gre
 - Strive to give each of your test methods a meaningful name describing the scenario you are testing and its expected behaviour if possible
 - Finally, have fun!
 
+## Final words:
+- The sample solution can be found by checking out the `final-solution` branch in this repository.
+- If you’re interested in reading more about TDD, here are some useful books:
+   - [Test Driven Development by example by Kent Beck](https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530)
+   - [Refactoring by Martin Fowler](https://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672)
+
 ## Got Feedback?
 We'd sure love to hear what you think about this workshop! Just fill in [this form](https://goo.gl/forms/huDZd1VlFSICOZIa2) and share your thoughts!
