@@ -47,18 +47,32 @@ Your test method should have a meaningful name describing the scenario you are t
     
     class StringMummifierTestCase(TestCase):
         def test_should_not_mummify_empty_string(self):
+            # Arrange
             word = ""
     
+            # Act
             mummifier = StringMummifier()
-            mummified_word = mummifier.mommify(word)
+            mummified_word = mummifier.mummify(word)
     
+            # Assert
             self.assertEqual("", mummified_word)
     ```
+    
+    4. Run the test 
+    
+       In your project folder, you can run `python3 -m unittest test_string_mummifier.py`
+       
+       Or if you are using an IDE like PyCharm, you should be able to run tests from the IDE itself by right clicking the test method name and selecting 'Run unittests for ...'
+    
+    You would see that now would throw the below error: 
+    
+    `ImportError: cannot import name 'StringMummifier'`
+    
+    This is because we've not implemented the class yet! Let's do that now.
 
-2. Create a file called string_mummifier.py
-You will use this file to write the code for your solution
+2. Create a file called `string_mummifier.py` (You will use this file to write the code for your solution)
 
-   1. Create a python class StringMummifier and a method in the class called mummify that takes in a word
+   1. Create a python class `StringMummifier` and a method in the class called `mummify` that takes in a word. For now let's just make the method return None.
     
     ```python
     class StringMummifier:
@@ -68,11 +82,14 @@ You will use this file to write the code for your solution
 
 3. Run the test
 
-   1. In your project folder, you can run `python3 -m unittest test_string_mummifier.py`
+   In your project folder, you can run `python3 -m unittest test_string_mummifier.py`
   
-   2. See that the test fails (Red Stage!)
+   See that the test fails for the right reason. (Red Stage!) You should get a similar error as below:
+    
+   `AssertionError: '' != None`
+    
    
-4. Fix the test by implementing the simplest possible logic in the mummify method
+4. Fix the test by implementing the simplest possible logic in the mummify method in order to pass the test.
 
    ```python
    class StringMummifier:
@@ -87,9 +104,9 @@ You will use this file to write the code for your solution
 
 6. Refactor your solution if required
 
-7. Repeat the below steps:
-   1. Writing a new test, see that it fails (Red)
-   2. Write the functionality to fix the test, and tests should pass (Green)
+7. Continue repeating the below steps:
+   1. Writing a new test for another test scenario, see that it fails (Red)
+   2. Write the functionality to fix the test, and that all tests should still pass (Green)
    3. Refactor where necessary
 
   
