@@ -59,3 +59,6 @@ The challenge for you today is to complete the above problem with a TDD (Red-Gre
 - If you are stuck with coming up with a list of test scenarios, you can refer to this [link](test-scenarios.md) to see the complete list we have come up with.
 - Strive to give each of your test methods a meaningful name describing the scenario you are testing and its expected behaviour if possible
 - Finally, have fun!
+
+## Got Feedback?
+We'd sure love to hear what you think about this workshop! Just fill in [this form](https://goo.gl/forms/huDZd1VlFSICOZIa2) and share your thoughts!
