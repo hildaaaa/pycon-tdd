@@ -52,11 +52,11 @@ The challenge for you today is to complete the above problem with a TDD (Red-Gre
    - The first test method has been set up for you. You may choose to clone the repo or start from scratch by yourself. (It's easy!)
      - The tests are written in `test_string_mummifier.py` while the implementation is written in `string_mummifier.py`
    - You can run all tests with this command while in the project directory: `python3 -m unittest test_string_mummifier.py`. Or if you are using an IDE like PyCharm, you should be able to run tests from the IDE itself by right clicking the test name and selecting 'Run unittests for ...'
-   - If you are unfamiliar with python, we recommend that you start from referring to our step by step guide [here](step-by-step-guide.md)
+   - If you are unfamiliar with python, we recommend that you start from referring to our step by step guide [here](more-guides/step-by-step-guide.md)
 4. Repeat the Red-Green-Refactor steps till your functionality is complete.
 
 ## Tip:
-- If you are stuck with coming up with a list of test scenarios, you can refer to this [link](test-scenarios.md) to see the complete list we have come up with.
+- If you are stuck with coming up with a list of test scenarios, you can refer to this [link](more-guides/test-scenarios.md) to see the complete list we have come up with.
 - Strive to give each of your test methods a meaningful name describing the scenario you are testing and its expected behaviour if possible
 - Finally, have fun!
 
