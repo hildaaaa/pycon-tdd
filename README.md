@@ -10,7 +10,8 @@ Some benefits of practicing TDD include:
 ## What is TDD?
 1. Writing tests before writing code
 2. Write the minimum amount of code necessary to make tests pass
-3. Rinse and repeat
+3. Refactor your code where necessary
+4. Rinse and repeat
 
 ## Red-Green-Refactor
 Red-green-refactor is a framework that developers use to build a test suite, write implementation code, and optimize their codebase in short development cycles.
@@ -57,7 +58,8 @@ The challenge for you today is to complete the above problem with a TDD (Red-Gre
 
 ## Tip:
 - If you are stuck with coming up with a list of test scenarios, you can refer to this [link](more-guides/test-scenarios.md) to see the complete list we have come up with.
-- Strive to give each of your test methods a meaningful name describing the scenario you are testing and its expected behaviour if possible
+- Strive to give each of your test methods a meaningful name describing the scenario you are testing and its expected behaviour if possible.
+- If your code has conditional branching involved, do ensure that each possible execution path is covered by at least one test.
 - Finally, have fun!
 
 ## Final words:
